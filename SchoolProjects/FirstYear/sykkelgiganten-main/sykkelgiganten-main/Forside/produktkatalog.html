@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Produkter - Sykkelgiganten</title>
+      
+      <link rel="icon" type="image/x-icon" href="Bilder/Logo.png">
+      <link href="bootstrap.css" rel="stylesheet">
+      <link href="forside_style.css" type="text/css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="dropdown-hamburger desktop-hide">
+        <img src="Bilder/menu-icon.png" id="hamburger-img" alt="Bilde av et hamburgermeny ikon">
+        <div class="dropdown-content-hamburger">
+          <img src="Bilder/cross-icon.png" id="cross-img" alt="Bilde av en X ikon">
+          <div class="row spacing-for-X">
+            <div class="col-12 col-sm-12">
+              <a href="produktkatalog.html"><h2 class="nav-h2 font">Produkter</h2></a>
+              <br>
+              <a href="omoss.html"><h2 class="nav-h2 font">Om oss</h2></a>
+              <br>
+              <a href="kontaktoss.html"><h2 class="nav-h2 font">Kontakt oss</h2></a>
+              <br>
+              <a href="blogg.html"><h2 class="nav-h2 font">Blogg</h2></a>
+            </div>
+          </div>
+          
+          <hr id="line">
+          <div class="row">
+            <div class="col-12 col-md-6 cells">
+              <h2 class="nav-h2 font">Alle sykler</h2>
+              <a href="produktkatalog.html">Damesykler</a>
+              <a href="produktkatalog.html">Herresykler</a>
+              <a href="produktkatalog.html">Barnesykler</a>
+              <a href="produktkatalog.html">Sportssykkler</a>
+              <a href="produktkatalog.html">BMX</a>
+            </div>
+            <div class="col-12 col-md-6 cells">
+              <h2 class="nav-h2 font">Tilbehør</h2>
+              <a href="produktkatalog.html">Sykkellås</a>
+              <a href="produktkatalog.html">Sykkelhjelmer</a>
+              <a href="produktkatalog.html">Sykkelvogner</a>
+              <a href="produktkatalog.html">Deler & Vedlikehold</a>
+              <a href="produktkatalog.html">Sykkelsko</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="logo-div">
+        <a href="forside.html"><img id="logo" src="Bilder/Logo.png" alt="Bilde av logoen til sykkelgiganten"></a>
+      </div>
+      
+      
+
+      <div class="mobile_hide">
+        <ul id="menu" class="nav-ul">
+          <li class="nav-li">
+            <div class="dropdown">
+              <a id="produkter" href="#" style="text-decoration: underline;">Produkter <img src="Bilder/Arrow.png" id="arrow" alt="Bilde av en dropdown-meny pil"></a>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="col-12 col-md-6 cells">
+                    <h2 class="nav-h2 font">Alle sykler</h2>
+                    <a href="produktkatalog.html">Damesykler</a>
+                    <a href="produktkatalog.html">Herresykler</a>
+                    <a href="produktkatalog.html">Barnesykler</a>
+                    <a href="produktkatalog.html">Sportssykkler</a>
+                    <a href="produktkatalog.html">BMX</a>
+                  </div>
+                  <div class="col-12 col-md-6 cells">
+                    <h2 class="nav-h2 font">Tilbehør</h2>
+                    <a href="produktkatalog.html">Sykkellås</a>
+                    <a href="produktkatalog.html">Sykkelhjelmer</a>
+                    <a href="produktkatalog.html">Sykkelvogner</a>
+                    <a href="produktkatalog.html">Deler & Vedlikehold</a>
+                    <a href="produktkatalog.html">Sykkelsko</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-li">
+            <a href="omoss.html">Om oss</a>
+          </li>
+          <li class="nav-li">
+            <a href="kontaktoss.html">Kontakt oss</a>
+          </li>
+          <li class="nav-li">
+            <a href="blogg.html">Blogg</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="login.html"><img src="Bilder/profile_icon.png" id="profile-img" alt="Bilde av et login ikon"></a>
+      </div>
+
+      <div class="search-div">
+        <form class="search-form">
+          <input type="search" id="searchbar" onkeyup="search_products()" placeholder="Finn produkter.." style="width: 300px; border-radius: 7px;">
+          <img src="Bilder/Search.png" onclick="search_products()" type="submit" id="search-img" alt="Bilde av et søke ikon">
+        </form>
+      </div>
+    </nav>
+    <!-- Navbar --> 
+
+    
+    <header>
+       
+    <div id="fordeler-div" class="row py-3">
+      <!-- Hjemmelevering -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/box-open-solid.svg" alt="Ikon av en box" class="fordeler-icons">
+          <figcaption><strong>Hjemlevering</strong></figcaption>
+        </figure> 
+      </div>
+      <!-- Rabatt ved kjøp -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/percent-solid.svg" alt="Ikon av symbolet prosent" class="fordeler-icons">
+          <figcaption><strong>Rabatt ved kjøp</strong></figcaption>
+        </figure> 
+      </div>
+      <!-- To års garanti -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/square-check-solid.svg" alt="Ikon av et check mark" class="fordeler-icons">
+          <figcaption><strong>To års garanti</strong></figcaption>
+        </figure> 
+      </div>
+      <!-- 30 dagers åpent kjøp -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/calendar-days-solid.svg" alt="Ikon av en kalender" class="fordeler-icons">
+          <figcaption><strong>30 dagers åpent kjøp</strong></figcaption>
+        </figure> 
+      </div>
+    </div> 
+
+    <!-- Background image -->
+    <div style="background-color: white; display: flex; justify-content: center; width: 100%;">
+      <div style="background-color: white; width:70%; border:groove; border-radius:0px 0px 7px 7px;">
+        <div style="position: relative;">
+          <img class="layer0" style="object-fit: cover;" src="Bilder/Sykkel_banner(clean-plate).png" alt="Banner">
+          <h1 class="h1-font" style="position: absolute; bottom: 0; right: 5%; margin: 0; padding: 3%; background-color: transparent; color: black; font-size: 3vw;">Produktkatalog</h1>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+
+    <!--Dropdown filtermeny-->
+    <div class="d-flex justify-content-center my-3">
+    <div class="col-11 dropdown" style="display:flex; justify-content: center;">
+      <button class="col-11 btn btn-secondary dropdown-toggle filter-knapp" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Produktfilter
+      </button>
+      <ul class="col-11 dropdown-menu justify-content-center" aria-labelledby="dropdownMenuButton1" data-bs-auto-close="false" onclick="event.stopPropagation()">
+        <ul class="col-12 col-md-3 merke-liste justify-content-center" data-bs-auto-close="false">
+        <h3>Merker</h3>
+        <li class="list-group-item">
+          <input class="form-check-input me-1 sjekkboks" type="checkbox" value="" id="xeedcheckbox">
+          <label class="form-check-label stretched-link" for="xeedcheckbox">Xeed</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="gekkocheckbox">
+          <label class="form-check-label stretched-link" for="gekkocheckbox">Gekko</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="scottcheckbox">
+          <label class="form-check-label stretched-link" for="scottcheckbox">Scott</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="giantcheckbox">
+          <label class="form-check-label stretched-link" for="giantcheckbox">GIANT</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="santacruzcheckbox">
+          <label class="form-check-label stretched-link" for="santacruzcheckbox">SANTA CRUZ</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="marincheckbox">
+          <label class="form-check-label stretched-link" for="marincheckbox">Marin</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="raleighcheckbox">
+          <label class="form-check-label stretched-link" for="raleighcheckbox">Raleigh</label>
+        </li>
+        </ul>
+
+        <ul class="col-12 col-md-2 farge-liste justify-content-center" data-bs-auto-close="false">
+        <h3>Farger</h3>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="blacheckbox">
+          <label class="form-check-label stretched-link" for="blacheckbox">Blå</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="rodcheckbox">
+          <label class="form-check-label stretched-link" for="rodcheckbox">Rød</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="gronncheckbox">
+          <label class="form-check-label stretched-link" for="gronncheckbox">Grønn</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="svartcheckbox">
+          <label class="form-check-label stretched-link" for="svartcheckbox">Svart</label>
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" id="hvittcheckbox">
+          <label class="form-check-label stretched-link" for="hvittcheckbox">Hvitt</label>
+        </li>
+        </ul>
+
+        <ul class="col-12 col-md-3 storrelse-liste justify-content-center" data-bs-auto-close="false">
+          <h3>Størrelser</h3>
+          <li class="list-group-item" data-bs-auto-close="false">
+            <input class="form-check-input me-1" type="checkbox" value="" id="xscheckbox">
+            <label class="form-check-label stretched-link" for="xscheckbox">X-Small</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="scheckbox">
+            <label class="form-check-label stretched-link" for="scheckbox">Small</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="mediumcheckbox">
+            <label class="form-check-label stretched-link" for="mediumcheckbox">Medium</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="largecheckbox">
+            <label class="form-check-label stretched-link" for="largecheckbox">Large</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="xlcheckbox">
+            <label class="form-check-label stretched-link" for="xlcheckbox">X-Large</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="xxlcheckbox">
+            <label class="form-check-label stretched-link" for="xxlcheckbox">XX-Large</label>
+          </li>
+          </ul>
+
+          <ul class="col-12 col-md-3 pris-liste justify-content-center" data-bs-auto-close="false">
+            <h3>Prisklasse</h3>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="pris1checkbox">
+              <label class="form-check-label stretched-link" for="pris1checkbox">&lt5000</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="pris2checkbox">
+              <label class="form-check-label stretched-link" for="pris2checkbox">5000-10,000</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="pris3checkbox">
+              <label class="form-check-label stretched-link" for="pris3checkbox">10,001-15,000</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="pris4checkbox">
+              <label class="form-check-label stretched-link" for="pris4checkbox">15,001-20,000</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="pris5checkbox">
+              <label class="form-check-label stretched-link" for="pris5checkbox">20,001-25,000</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="pris6checkbox">
+              <label class="form-check-label stretched-link" for="pris6checkbox">&gt25,000</label>
+            </li>
+            </ul>
+
+      </ul>
+    </div>
+  </div>
+
+    <!-- Produktkort -->
+    <div class="col-12 container" style="width:100%; max-width:100%;">
+      <div class="row col-12 col-md-12">
+        
+        <div class="col-12 col-md-12 product-cards" style="margin:0; padding:0;">
+          <div class="col-12 col-md-12 cards">
+            
+            <div class="products col-md-3 card my-4" >
+              <div class="card-zoom-container">
+                <a href="produktside.html"><img src="Bilder/sykkel1.jpg" class="img-same-height card-img-top card-zoom" alt="Bilde av en BMX"></a>
+              </div>
+                <div class="card-body">
+                  <h5 class="card-title font">BMX</h5>
+                  <p class="card-text">Pris: 13699kr<br>Merke: Xeed</p>
+                  <a href="produktside.html" class="button-margin btn btn-primary">Vis</a>
+                </div>
+              </div>
+    
+              <div class="products col-md-3 card my-4" >
+                <div class="card-zoom-container">
+                  <a href="produktside.html"><img src="Bilder/sykkel2.jpg" class="img-same-height card-img-top card-zoom" alt="Bildet av en Sportssykkel"></a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font">Sportssykkel</h5>
+                  <p class="card-text">Pris: 10990kr<br>Merke: Gekko</p>
+                  <a href="produktside.html" class="button-margin btn btn-primary">Vis</a>
+                </div>
+              </div>
+    
+              <div class="products col-md-3 card my-4" >
+                <div class="card-zoom-container">
+                  <a href="produktside.html"><img src="Bilder/sykkel3.jpg" class="img-same-height card-img-top card-zoom" alt="Bilde av en Bysykkel"></a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font">Damesykkel</h5>
+                  <p class="card-text">Pris: 5790kr<br>Merke: Scott</p>
+                  <a href="produktside.html" class="button-margin btn btn-primary">Vis</a>
+                </div>
+              </div>
+
+              <div class="products col-md-3 card my-3" >
+                <div class="card-zoom-container">
+                  <a href="produktside.html"><img src="Bilder/sykkel4.jpg" class="img-same-height card-img-top card-zoom" alt="Bilde av en BMX"></a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font">BMX</h5>
+                  <p class="card-text">Pris: 13699kr<br>Merke: Xeed</p>
+                  <a href="produktside.html" class="button-margin btn btn-primary">Vis</a>
+                </div>
+              </div>
+    
+              <div class="products col-md-3 card my-3" >
+                <div class="card-zoom-container">
+                  <a href="produktside.html"><img src="Bilder/sykkel5.jpg" class="img-same-height card-img-top card-zoom" alt="Bilde av en sportssykkel"></a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font">Sportssykkel</h5>
+                  <p class="card-text">Pris: 10990kr<br>Merke: Gekko</p>
+                  <a href="produktside.html" class="button-margin btn btn-primary">Vis</a>
+                </div>
+              </div>
+    
+              <div class="products col-md-3 card my-3" >
+                <div class="card-zoom-container">
+                  <a href="produktside.html"><img src="Bilder/sykkel6.jpg" class="img-same-height card-img-top card-zoom" alt="Bilde av en Bysykkel"></a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font">Damesykkel</h5>
+                  <p class="card-text">Pris: 5790kr<br>Merke: Scott</p>
+                  <a href="produktside.html" class="button-margin btn btn-primary">Vis</a>
+                </div>
+              </div>
+
+              <div class="products col-md-3 card my-3" >
+                <div class="card-zoom-container">
+                  <a href="produktside.html"><img src="Bilder/sykkel7.jpg" class="img-same-height card-img-top card-zoom" alt="Bilde av en BMX"></a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font">BMX</h5>
+                  <p class="card-text">Pris: 13699kr<br>Merke: Xeed</p>
+                  <a href="produktside.html" class="button-margin btn btn-primary">Vis</a>
+                </div>
+              </div>
+    
+              <div class="products col-md-3 card my-3" >
+                <div class="card-zoom-container">
+                  <a href="produktside.html"><img src="Bilder/sykkel8.jpg" class="img-same-height card-img-top card-zoom" alt="Bilde av en sportssykkel"></a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font">Sportssykkel</h5>
+                  <p class="card-text">Pris: 10990kr<br>Merke: Gekko</p>
+                  <a href="produktside.html" class="button-margin btn btn-primary">Vis</a>
+                </div>
+              </div>
+    
+              <div class="products col-md-3 card my-3" >
+                <div class="card-zoom-container">
+                  <a href="produktside.html"><img src="Bilder/sykkel9.jpg" class="img-same-height card-img-top card-zoom" alt="Bilde av en bysykkel"></a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title font">Sportssykkel</h5>
+                  <p class="card-text">Pris: 5790kr<br>Merke: Scott</p>
+                  <a href="produktside.html" class="button-margin btn btn-primary">Vis</a>
+                </div>
+              </div>
+    
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+  
+
+        <!--FOOTER-->
+        <footer class="bg-black text-white pt-5 pb-4">
+          <div class="Footer">
+              <div class="registrer">
+                    <div class="col-12 row">
+                      <h2 class="h2 col-12">Bli Medlem!</h2>
+                      <form class="col-8" style="max-width:300px; min-width:186px;">
+                        <input type="email" class="form-control" placeholder="Epost:">
+                      </form>
+                      <button type="submit" class="col-3 btn-btn-primary" style="width:fit-content"><b>Registrer</b></button>
+                    </div>
+                </div>
+            <div class="col-12 row" style="justify-content:space-between">
+              <!--Første-->
+              <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+                <ul class="footer_ul">
+                  <h4 class="h4 text-uppercase mb-4 font-weight-bold text-white">Personvern</h4>
+                  <li><a href="https://analytics.google.com/analytics/web/provision/#/provision" class="text-white" style="text-decoration: none;">Google analytics</a></li>
+                  <li><a href="https://www.datatilsynet.no/personvern-pa-ulike-omrader/internett-og-apper/cookies/" class="text-white" style="text-decoration: none;">Cookies-info</a></li>
+                  <li><a href="https://jusinfo.no/kjopsrett/om-kjopsrett/om-kjopsrett/" class="text-white" style="text-decoration: none;">Kjøpsrett</a></li>
+                  <li><a href="personvern.html" class="text-white" style="text-decoration: none;">Personvernerklæring</a></li>
+                </ul>
+              </div>
+            
+              <!--Andre-->
+              <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+                <ul class="footer_ul">
+                  <h4 class="h4 text-uppercase mb-4 font-weight-bold text-white">Kundestøtte</h4>
+                  <li><a href="#" class="text-white" style="text-decoration: none;">Kontakt oss</a></li>
+                  <li><a href="#" class="text-white" style="text-decoration: none;">Spørsmål og svar</a></li>
+                  <li><a href="#" class="text-white" style="text-decoration: none;">Reklamasjon og garanti</a></li>
+                </ul>
+              </div>
+    
+              <!--Tredje-->
+              <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+                <ul class="footer_ul">
+                  <h4 class="h4 text-uppercase mb-4 font-weight-bold text-white">Produkter</h4>
+                  <li><a href="/forside.html" class="text-white" style="text-decoration: none;">Nye produkter</a></li>
+                  <li><a href="/produktkatalog.html" class="text-white" style="text-decoration: none;">Nytt på lager</a></li>
+                  <li><a href="/produktkatalog.html" class="text-white" style="text-decoration: none;">Merker/ produsent</a></li>
+                </ul>
+              </div>
+              
+              <!--<hr class="mb-4">-->
+                <div style="display: flex; justify-content: center; width: 100%;">
+                  <p>Copyright ©2023 All rights reserved by:
+                    <a href="https://domains.google" style="text-decoration: none;">
+                      <b>The Providers</b>
+                    </a>
+                  </p>
+                </div>
+      
+                <div class="text-md-right">
+                  <div class="text-center text-md-end">
+                    <ul class="list-unstyled list-inline">
+                      <li class="list-inline-item">
+                        <img src="Bilder/Insta.png" alt="Instagram ikon" class="btn-floating btn-sm text-white"
+                          style="width:25px;">
+                      </li>
+      
+                      <li class="list-inline-item">
+                        <img src="Bilder/Facebook.png" alt="Facebook ikon" class="btn-floating btn-sm text-white"
+                          style="width:25px;">
+                      </li>
+      
+                      <li class="list-inline-item">
+                        <img src="Bilder/tiktok.png" alt="Tiktok ikon" class="btn-floating btn-sm text-white" style="width:25px;">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+    
+    <script>
+      const dropdowncontent = document.querySelector('.dropdown-content-hamburger');
+    const hamburgerimg = document.querySelector('#hamburger-img');
+    const crossimg = document.querySelector('#cross-img');
+
+    hamburgerimg.addEventListener('click', function() {
+      dropdowncontent.style.display = 'block';
+      hamburgerimg.style.display = 'none';
+    });
+
+    crossimg.addEventListener('click', function() {
+      dropdowncontent.style.display = 'none';
+      hamburgerimg.style.display = 'block';
+    });
+    </script>
+    <script src="search_products.js"></script>
+
+  </body>
+</html>

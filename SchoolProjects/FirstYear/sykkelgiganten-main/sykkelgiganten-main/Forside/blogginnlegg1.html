@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Vi ekspanderer - Sykkelgiganten</title>
+      
+      <link rel="icon" type="image/x-icon" href="Bilder/Logo.png">
+      <link href="bootstrap.css" rel="stylesheet">
+      <link href="forside_style.css" type="text/css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+  <nav>
+    <div class="dropdown-hamburger desktop-hide">
+      <img src="Bilder/menu-icon.png" id="hamburger-img" alt="Bilde av et hamburgermeny ikon">
+      <div class="dropdown-content-hamburger">
+        <img src="Bilder/cross-icon.png" id="cross-img" alt="Bilde av en X ikon">
+        <div class="row spacing-for-X">
+          <div class="col-12 col-sm-12">
+            <a href="produktkatalog.html"><h2 class="nav-h2 font">Produkter</h2></a>
+            <br>
+            <a href="omoss.html"><h2 class="nav-h2 font">Om oss</h2></a>
+            <br>
+            <a href="kontaktoss.html"><h2 class="nav-h2 font">Kontakt oss</h2></a>
+            <br>
+            <a href="blogg.html"><h2 class="nav-h2 font">Blogg</h2></a>
+          </div>
+        </div>
+        
+        <hr id="line">
+        <div class="row">
+          <div class="col-12 col-md-6 cells">
+            <h2 class="nav-h2 font">Alle sykler</h2>
+            <a href="produktkatalog.html">Damesykler</a>
+            <a href="produktkatalog.html">Herresykler</a>
+            <a href="produktkatalog.html">Barnesykler</a>
+            <a href="produktkatalog.html">Sportssykkler</a>
+            <a href="produktkatalog.html">BMX</a>
+          </div>
+          <div class="col-12 col-md-6 cells">
+            <h2 class="nav-h2 font">Tilbehør</h2>
+            <a href="produktkatalog.html">Sykkellås</a>
+            <a href="produktkatalog.html">Sykkelhjelmer</a>
+            <a href="produktkatalog.html">Sykkelvogner</a>
+            <a href="produktkatalog.html">Deler & Vedlikehold</a>
+            <a href="produktkatalog.html">Sykkelsko</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="logo-div">
+      <a href="forside.html"><img id="logo" src="Bilder/Logo.png" alt="Bilde av logoen til sykkelgiganten"></a>
+    </div>
+    
+    
+
+    <div class="mobile_hide">
+      <ul id="menu" class="nav-ul">
+        <li class="nav-li">
+          <div class="dropdown">
+            <a id="produkter" href="#">Produkter <img src="Bilder/Arrow.png" id="arrow" alt="Bilde av en dropdown-meny pil"></a>
+            <div class="dropdown-content">
+              <div class="row">
+                <div class="col-12 col-md-6 cells">
+                  <h2 class="nav-h2 font">Alle sykler</h2>
+                  <a href="produktkatalog.html">Damesykler</a>
+                  <a href="produktkatalog.html">Herresykler</a>
+                  <a href="produktkatalog.html">Barnesykler</a>
+                  <a href="produktkatalog.html">Sportssykkler</a>
+                  <a href="produktkatalog.html">BMX</a>
+                </div>
+                <div class="col-12 col-md-6 cells">
+                  <h2 class="nav-h2 font">Tilbehør</h2>
+                  <a href="produktkatalog.html">Sykkellås</a>
+                  <a href="produktkatalog.html">Sykkelhjelmer</a>
+                  <a href="produktkatalog.html">Sykkelvogner</a>
+                  <a href="produktkatalog.html">Deler & Vedlikehold</a>
+                  <a href="produktkatalog.html">Sykkelsko</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-li">
+          <a href="omoss.html">Om oss</a>
+        </li>
+        <li class="nav-li">
+          <a href="kontaktoss.html">Kontakt oss</a>
+        </li>
+        <li class="nav-li">
+          <a href="blogg.html" style="text-decoration: underline;">Blogg</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-icons">
+      <a href="login.html"><img src="Bilder/profile_icon.png" id="profile-img" alt="Bilde av et login ikon"></a>
+    </div>
+
+    <div class="search-div">
+    </div>
+  </nav>
+  <!-- Navbar -->   
+    <div id="fordeler-div" class="row py-3">
+      <!-- Hjemmelevering -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/box-open-solid.svg" alt="Ikon av en box" class="fordeler-icons">
+          <figcaption><strong>Hjemlevering</strong></figcaption>
+        </figure> 
+      </div>
+      <!-- Rabatt ved kjøp -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/percent-solid.svg" alt="Ikon av symbolet prosent" class="fordeler-icons">
+          <figcaption><strong>Rabatt ved kjøp</strong></figcaption>
+        </figure> 
+      </div>
+      <!-- To års garanti -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/square-check-solid.svg" alt="Ikon av et check mark" class="fordeler-icons">
+          <figcaption><strong>To års garanti</strong></figcaption>
+        </figure> 
+      </div>
+      <!-- 30 dagers åpent kjøp -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/calendar-days-solid.svg" alt="Ikon av en kalender" class="fordeler-icons">
+          <figcaption><strong>30 dagers åpent kjøp</strong></figcaption>
+        </figure> 
+      </div>
+    </div> 
+
+    <!-- Background image -->
+    <div style="background-color: white; display: flex; justify-content: center; width: 100%;">
+      <div style="background-color: white; width:70%; border:groove; border-radius:0px 0px 7px 7px;">
+        <div style="position: relative;">
+          <img class="layer0" style="object-fit: cover;" src="Bilder/Sykkel_banner(clean-plate).png" alt="Banner">
+          <h1 class="h1-font" style="position: absolute; bottom: 0; right: 1%; margin: 0; padding: 3%; background-color: transparent; color: black; font-size: 4vw;">Blogginnlegg</h1>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+    <div style="display: flex; justify-content: center; width: 100%; margin-top:2rem;">
+      <div style="background-color: rgb(222, 222, 224); padding-top: 2rem; padding-bottom: 2rem; width: 80%; border-radius: 7px; text-align: center;">
+        <img src="Bilder/paris-gd894980dc_1920.jpg" alt="Bilde av byen" style="width: 80%; border-radius: 5px;">
+        <div class="row" style="display: flex; justify-content: center; text-align: center; margin-top: 2rem;">
+          <h2>Vi ekspanderer!</h2>
+          <div style="width: 80%;">
+            <p>
+              Vi ekspanderer! Vi har nylig åpnet flere butikker i ulike byer, etter å ha opplevd stor suksess med vår første butikk. Vi ønsker å nå flere kunder og har derfor utvidet vårt tilbud med flere butikker, som alle har samme konsept. Vi tilbyr et bredt utvalg av sykler, sykkelutstyr og tilbehør til konkurransedyktige priser.
+
+              Vår satsning på å ekspandere kommer som en respons på den økende interessen for sykling. Spesielt under pandemien, hvor flere velger sykling for å opprettholde sosial distansering og holde seg i form. Vi tror sykling vil fortsette å øke i popularitet og derfor ønsker vi å være tilstede der kundene er.
+
+              Vi tror også at vår satsning på å tilby bærekraftige produkter og tjenester har vært en viktig faktor for veksten i popularitet og etterspørsel. Vi er stolte over å kunne tilby et bredt utvalg av produkter som er miljøvennlige og bærekraftige.
+
+              Ved å utvide til nye områder og øke tilbudet av sykler og tilbehør, har vi også skapt nye arbeidsplasser og styrket vår posisjon som en av de ledende aktørene i sykkelbransjen.
+
+              Vi vil fortsette å jobbe hardt for å tilby kundene våre de beste produktene og tjenestene til de beste prisene. Vi er takknemlige for kundenes tillit og lojalitet, og ser frem til å fortsette å vokse og utvikle oss sammen med dem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="bg-black text-white pt-5 pb-4">
+      <div class="Footer">
+          <div class="registrer">
+                <div class="col-12 row">
+                  <h2 class="h2 col-12">Bli Medlem!</h2>
+                  <form class="col-8" style="max-width:300px; min-width:186px;">
+                    <input type="email" class="form-control" placeholder="Epost:">
+                  </form>
+                  <button type="submit" class="col-3 btn-btn-primary" style="width:fit-content"><b>Registrer</b></button>
+                </div>
+            </div>
+        <div class="col-12 row" style="justify-content:space-between">
+          <!--Første-->
+          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+            <ul class="footer_ul">
+              <h4 class="h4 text-uppercase mb-4 font-weight-bold text-white">Personvern</h4>
+              <li><a href="https://analytics.google.com/analytics/web/provision/#/provision" class="text-white" style="text-decoration: none;">Google analytics</a></li>
+              <li><a href="https://www.datatilsynet.no/personvern-pa-ulike-omrader/internett-og-apper/cookies/" class="text-white" style="text-decoration: none;">Cookies-info</a></li>
+              <li><a href="https://jusinfo.no/kjopsrett/om-kjopsrett/om-kjopsrett/" class="text-white" style="text-decoration: none;">Kjøpsrett</a></li>
+              <li><a href="personvern.html" class="text-white" style="text-decoration: none;">Personvernerklæring</a></li>
+            </ul>
+          </div>
+        
+          <!--Andre-->
+          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+            <ul class="footer_ul">
+              <h4 class="h4 text-uppercase mb-4 font-weight-bold text-white">Kundestøtte</h4>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Kontakt oss</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Spørsmål og svar</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Reklamasjon og garanti</a></li>
+            </ul>
+          </div>
+
+          <!--Tredje-->
+          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+            <ul class="footer_ul">
+              <h4 class="h4 text-uppercase mb-4 font-weight-bold text-white">Produkter</h4>
+              <li><a href="/forside.html" class="text-white" style="text-decoration: none;">Nye produkter</a></li>
+              <li><a href="/produktkatalog.html" class="text-white" style="text-decoration: none;">Nytt på lager</a></li>
+              <li><a href="/produktkatalog.html" class="text-white" style="text-decoration: none;">Merker/ produsent</a></li>
+            </ul>
+          </div>
+          
+          <!--<hr class="mb-4">-->
+            <div style="display: flex; justify-content: center; width: 100%;">
+              <p>Copyright ©2023 All rights reserved by:
+                <a href="https://domains.google" style="text-decoration: none;">
+                  <b>The Providers</b>
+                </a>
+              </p>
+            </div>
+  
+            <div class="text-md-right">
+              <div class="text-center text-md-end">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <img src="Bilder/Insta.png" alt="Instagram ikon" class="btn-floating btn-sm text-white"
+                      style="width:25px;">
+                  </li>
+  
+                  <li class="list-inline-item">
+                    <img src="Bilder/Facebook.png" alt="Facebook ikon" class="btn-floating btn-sm text-white"
+                      style="width:25px;">
+                  </li>
+  
+                  <li class="list-inline-item">
+                    <img src="Bilder/tiktok.png" alt="Tiktok ikon" class="btn-floating btn-sm text-white" style="width:25px;">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+      const dropdowncontent = document.querySelector('.dropdown-content-hamburger');
+    const hamburgerimg = document.querySelector('#hamburger-img');
+    const crossimg = document.querySelector('#cross-img');
+
+    hamburgerimg.addEventListener('click', function() {
+      dropdowncontent.style.display = 'block';
+      hamburgerimg.style.display = 'none';
+    });
+
+    crossimg.addEventListener('click', function() {
+      dropdowncontent.style.display = 'none';
+      hamburgerimg.style.display = 'block';
+    });
+    </script>
+
+  </body>
+</html>

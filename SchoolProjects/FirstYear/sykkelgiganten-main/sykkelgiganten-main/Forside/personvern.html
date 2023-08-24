@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Personvernerklæring - Sykkelgiganten</title>
+      
+      <link rel="icon" type="image/x-icon" href="Bilder/Logo.png">
+      <link href="bootstrap.css" rel="stylesheet">
+      <link href="forside_style.css" type="text/css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="dropdown-hamburger desktop-hide">
+        <img src="Bilder/menu-icon.png" id="hamburger-img" alt="Bilde av et hamburgermeny ikon">
+        <div class="dropdown-content-hamburger">
+          <img src="Bilder/cross-icon.png" id="cross-img" alt="Bilde av en X ikon">
+          <div class="row spacing-for-X">
+            <div class="col-12 col-sm-12">
+              <a href="produktkatalog.html"><h2 class="nav-h2 font">Produkter</h2></a>
+              <br>
+              <a href="omoss.html"><h2 class="nav-h2 font">Om oss</h2></a>
+              <br>
+              <a href="kontaktoss.html"><h2 class="nav-h2 font">Kontakt oss</h2></a>
+              <br>
+              <a href="blogg.html"><h2 class="nav-h2 font">Blogg</h2></a>
+            </div>
+          </div>
+          
+          <hr id="line">
+          <div class="row">
+            <div class="col-12 col-md-6 cells">
+              <h2 class="nav-h2 font">Alle sykler</h2>
+              <a href="produktkatalog.html">Damesykler</a>
+              <a href="produktkatalog.html">Herresykler</a>
+              <a href="produktkatalog.html">Barnesykler</a>
+              <a href="produktkatalog.html">Sportssykkler</a>
+              <a href="produktkatalog.html">BMX</a>
+            </div>
+            <div class="col-12 col-md-6 cells">
+              <h2 class="nav-h2 font">Tilbehør</h2>
+              <a href="produktkatalog.html">Sykkellås</a>
+              <a href="produktkatalog.html">Sykkelhjelmer</a>
+              <a href="produktkatalog.html">Sykkelvogner</a>
+              <a href="produktkatalog.html">Deler & Vedlikehold</a>
+              <a href="produktkatalog.html">Sykkelsko</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="logo-div">
+        <a href="forside.html"><img id="logo" src="Bilder/Logo.png" alt="Bilde av logoen til sykkelgiganten"></a>
+      </div>
+      
+      
+
+      <div class="mobile_hide">
+        <ul id="menu" class="nav-ul">
+          <li class="nav-li">
+            <div class="dropdown">
+              <a id="produkter" href="#">Produkter <img src="Bilder/Arrow.png" id="arrow" alt="Bilde av en dropdown-meny pil"></a>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="col-12 col-md-6 cells">
+                    <h2 class="nav-h2 font">Alle sykler</h2>
+                    <a href="produktkatalog.html">Damesykler</a>
+                    <a href="produktkatalog.html">Herresykler</a>
+                    <a href="produktkatalog.html">Barnesykler</a>
+                    <a href="produktkatalog.html">Sportssykkler</a>
+                    <a href="produktkatalog.html">BMX</a>
+                  </div>
+                  <div class="col-12 col-md-6 cells">
+                    <h2 class="nav-h2 font">Tilbehør</h2>
+                    <a href="produktkatalog.html">Sykkellås</a>
+                    <a href="produktkatalog.html">Sykkelhjelmer</a>
+                    <a href="produktkatalog.html">Sykkelvogner</a>
+                    <a href="produktkatalog.html">Deler & Vedlikehold</a>
+                    <a href="produktkatalog.html">Sykkelsko</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-li">
+            <a href="omoss.html">Om oss</a>
+          </li>
+          <li class="nav-li">
+            <a href="kontaktoss.html">Kontakt oss</a>
+          </li>
+          <li class="nav-li">
+            <a href="blogg.html">Blogg</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="login.html"><img src="Bilder/profile_icon.png" id="profile-img" alt="Bilde av et login ikon"></a>
+      </div>
+
+      <div class="search-div">
+      </div>
+    </nav>
+    <!-- Navbar --> 
+
+    
+    <header>
+       
+    <div id="fordeler-div" class="row py-3">
+      <!-- Hjemmelevering -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/box-open-solid.svg" alt="Ikon av en box" class="fordeler-icons">
+          <figcaption><strong>Hjemlevering</strong></figcaption>
+        </figure> 
+      </div>
+      <!-- Rabatt ved kjøp -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/percent-solid.svg" alt="Ikon av symbolet prosent" class="fordeler-icons">
+          <figcaption><strong>Rabatt ved kjøp</strong></figcaption>
+        </figure> 
+      </div>
+      <!-- To års garanti -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/square-check-solid.svg" alt="Ikon av et check mark" class="fordeler-icons">
+          <figcaption><strong>To års garanti</strong></figcaption>
+        </figure> 
+      </div>
+      <!-- 30 dagers åpent kjøp -->
+      <div class="col-6 col-md-3 icon-div">
+        <figure>
+          <img src="Bilder/calendar-days-solid.svg" alt="Ikon av en kalender" class="fordeler-icons">
+          <figcaption><strong>30 dagers åpent kjøp</strong></figcaption>
+        </figure> 
+      </div>
+    </div> 
+
+    
+  </header>
+
+  <div class="col-12 container" style="width:100%; max-width:100%; justify-content: center;;">
+    <div class="row col-12" style="justify-content: center;">
+        <h1 class="h1 text-center" style="margin-top:1rem;">Personvernerklæring</h1>
+      <div class="col-12 artikkel2" style="background-color:white;">
+
+        <div class="justify-content-center d-flex" style="margin-top:1rem; flex-wrap:wrap;">
+            <p class="paragraf text-center">Sykkelgiganten.no er behandlingsansvarlig for behandlingen av personopplysninger som beskrevet i denne personvernerklæringen. 
+                I denne personvernerklæringen forklarer vi hva slags personopplysninger vi lagrer og hvordan vi behandler de. 
+                Denne personvernerklæringen gjelder for: sykkelgiganten.no</p>
+                <div class="col-10 seksjon-personvern">
+                     <h2 class="h3 text-center" style="margin-top:2rem; text-decoration: underline;">Personopplysninger vi samler inn og behandler:</h2>
+                    <p class="paragraf text-center">
+                    Vi behandler følgende kategorier av personopplysninger:
+                        <ul>
+                            <li><b>Grunnleggende informasjon:</b> navn, fødselsdato</li>
+                            <li><b>Kontaktinformasjon:</b> navn, fødselsdato</li>
+                            <li><b>Konto og profilinformasjon:</b> Instillinger, preferanser</li>
+                            <li><b>Betalingsinformasjon:</b> Transaksjonsinformasjon, betalingsmiddel</li>
+                            <li><b>Kundehistorikk og Kunde:</b> bestillings- og leveringsopplysninger, handlekurvbevegelser, rabattkoder, lojalitetsprograminformasjon,</li>
+                            <li><b>Kundehistorikk og kundeengasjement:</b> aktive produkter og avtaler samt produkter og tjenester du har hatt tidligere, hvor mye og hvor ofte de brukes, status på produkter/tjenester,</li>
+                            <li><b>Kundeaktivitet:</b> lese- og handlingshistorikk fra app, nettsider eller elektronisk kommunikasjon vi sender ut. Samt teknisk informasjon om enhetene du bruker.</li>
+                            <li><b>Cookies: </b>se vår informasjon om cookies her: www.sykkelgigante.no/cookies</li>
+                        </ul>
+                        Personopplysningene samles i de fleste tilfeller inn direkte fra deg eller de genereres i forbindelse med at du bruker våre tjenester og produkter. Når vi henter personopplysninger fra andre kilder, henter vi personopplysninger fra følgende kilder:
+                    </p>
+                </div>
+
+                <div class="col-10 seksjon-personvern">
+                    <h2 class="h3 text-center" style="text-decoration: underline;">Hvordan vi bruker personopplysningene</h2>
+                    <h4 class="text-center" style="margin-top:1rem;">Levering av tjeneste/avtaleinngåelse</h4>
+                   <p class="paragraf">
+                    Vi bruker dine personopplysninger til å oppfylle våre avtaler med deg, det vil si når du har bestilt et produkt eller en tjeneste fra oss. Det rettslige grunnlaget for å behandle personopplysninger til dette formålet er at behandlingen er nødvendig for å oppfylle en avtale med deg.
+                   </p>
+
+                   <h4 class="text-center" style="margin-top:1rem;">Administrasjon av kundeforhold</h4>
+                   <p class="paragraf">
+                    Vi bruker dine personopplysninger til å administrere vårt kundeforhold med deg. Det kan for eksempel være kundeservice, klagebehandling og feilretting vedrørende ditt kundeforhold. Det rettslige grunnlaget for å behandle personopplysninger til dette formålet er at behandlingen er nødvendig for å oppfylle en avtale med deg.
+                   </p>
+
+                   <h4 class="text-center" style="margin-top:1rem;">Analyse, forretningsutvikling og forbedring av tjenester</h4>
+                   <p class="paragraf">
+                    Vi arbeider kontinuerlig med å utvikle og forbedre våre tjenester og produkter. Mye av dette arbeidet innebærer å analysere ulike former for personopplysninger, som for eksempel kundeaktivitet, kundehistorikk og konto og profilinformasjon. Det rettslige grunnlaget for å behandle personopplysninger til dette formålet er vår berettigede interesse.
+                   </p>
+
+                   <h4 class="text-center" style="margin-top:1rem;">Tilpasset brukeropplevelse</h4>
+                   <p class="paragraf">
+                    Vi tilpasser brukeropplevelsen og kommunikasjonen til ditt kundeforhold og dette bruker vi personopplysninger til. Det rettslige grunnlaget for å behandle personopplysninger til dette formålet er vår berettigede interesse.
+                   </p>
+
+                   <h4 class="text-center" style="margin-top:1rem;">Salg og markedsføring</h4>
+                   <p class="paragraf">
+                    Vi bruker personopplysninger i forbindelse med salg og markedsføring av våre produkter og tjenester, for eksempel ved at du mottar epost fra oss. Det rettslige grunnlaget for å behandle personopplysninger til dette formålet er vår berettigede interesse. Du har mulighet å reservere deg fra deler av denne behandlingen ved å, for eksempel, reservere deg fra å motta epost fra oss. I tillegg til dette kan vi også be deg om samtykke til å bruke dine personopplysninger til såkalt profilering, hvor vi utleder interesser og behov på bakgrunn av dine personopplysninger. Hensikten med profilering vil være at markedsføringen vår skal bli mer relevant.
+                   </p>
+
+                   <h4 class="text-center" style="margin-top:1rem;">Systemovervåking, feilretting mm.</h4>
+                   <p class="paragraf">
+                    Vi overvåker våre systemer etter feil og problemer. En del av disse prosessene innebærer lagring og behandling av personopplysninger. Det rettslige grunnlaget for å behandle personopplysninger til dette formålet er vår berettigede interesse.
+                   </p>
+
+                   <h4 class="text-center" style="margin-top:1rem;">Sikkerhet, avdekking av svindel og kriminelle handlinger</h4>
+                   <p class="paragraf">
+                    Vi behandler personopplysninger i vårt arbeid med å beskytte våre brukere og oss selv mot svindelaktivitet, misbruk og kriminelle handlinger. Det rettslige grunnlaget for å behandle personopplysninger til dette formålet er vår berettigede interesse.
+                   </p>
+
+                   <h4 class="text-center" style="margin-top:1rem;">Overholde rettslige forpliktelser</h4>
+                   <p class="paragraf">
+                    I enkelte tilfeller er vi pålagt å behandle personopplysninger av hensyn til andre rettslige forpliktelser. Et eksempel på dette er informasjon knyttet til salg, som vi er pliktig til å regnskapsføre og oppbevare i henhold til bokføringsloven. Det rettslige grunnlaget for å behandle personopplysninger til dette formålet er at behandlingen er nødvendig for å oppfylle en rettslig forpliktelse som påhviler oss.
+                   </p>
+               </div>
+
+               <div class="col-10 seksjon-personvern">
+                <h2 class="h3 text-center" style="text-decoration: underline;">Dine rettigheter</h2>
+                <p class="paragraf text-center"><b>Dersom du ønsker å utøve noen av rettighetene, vennligst send en epost til support@sykkelgiganten.no</b></p>
+                
+                <h4 class="text-center" style="margin-top:1rem;">Rett til innsyn i egne opplysninger</h4>
+               <p class="paragraf">
+                Du kan be om en kopi av alle opplysninger vi behandler om deg. Ta kontakt på epostadressen ovenfor for å bruke innsynsretten din.
+               </p>
+
+               <h4 class="text-center" style="margin-top:1rem;">Rett til korrigering av personopplysninger</h4>
+               <p class="paragraf">
+                Du har rett til å be oss rette eller supplere opplysninger som er feilaktige eller misvisende.
+               </p>
+
+               <h4 class="text-center" style="margin-top:1rem;">Retten til sletting av personopplysninger</h4>
+               <p class="paragraf">
+                Du har rett til å få dine personopplysninger slettet uten ugrunnet opphold. Du kan derfor når som helst be oss slette opplysninger om deg selv. Men merk at informasjon som vi er pålagt beholde av hensyn til andre rettslige forpliktelser (som fore eksempel bokføringsloven) ikke vil bli slettet.
+               </p>
+
+               <h4 class="text-center" style="margin-top:1rem;">Begrensning av behandling av personopplysninger</h4>
+               <p class="paragraf">
+                I noen situasjoner kan du også be oss begrense behandlingen av opplysninger om deg. Dette gjør du ved å administrere samtykker eller reservasjoner i våre løsninger.
+               </p>
+
+               <h4 class="text-center" style="margin-top:1rem;">Protestere mot en behandling av personopplysninger</h4>
+               <p class="paragraf">
+                Dersom vi behandler opplysninger om deg med grunnlag i våre oppgaver eller på bakgrunn av en interesseavveining, har du rett til å protestere på vår behandling av opplysninger om deg. Dette gjør du ved å administrere samtykker eller reservasjoner i våre løsninger.
+               </p>
+
+               <h4 class="text-center" style="margin-top:1rem;">Dataportabilitet</h4>
+               <p class="paragraf">
+                Du har rett til å få utlevert dine personopplysninger i et strukturert, alminnelig anvendt og maskinlesbart format. Ta kontakt på epostadressen ovenfor for å få utlevert dine personopplysninger.
+               </p>
+               
+               <h4 class="text-center" style="margin-top:1rem;">Du kan klage på vår behandling av personopplysninger</h4>
+               <p class="paragraf">
+                Vi håper du vil si ifra dersom du mener vi ikke overholder reglene i personopplysningsloven. Si da gjerne først i fra gjennom den kontakten eller kanalen du allerede har etablert med oss. Du kan også klage over vår behandling av personopplysninger. Dette gjør du til Datatilsynet.
+               </p>
+
+               <I>Denne personvernerklæringen er basert på en mal for <a href="https://gdprcontrol.no/personvernerklaring-mal/">personvernerklæring</a> fra gdprcontrol.no</I>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div> 
+
+
+        <!--FOOTER-->
+        <footer class="bg-black text-white pt-5 pb-4">
+          <div class="Footer">
+              <div class="registrer">
+                    <div class="col-12 row">
+                      <h2 class="h2 col-12">Bli Medlem!</h2>
+                      <form class="col-8" style="max-width:300px; min-width:186px;">
+                        <input type="email" class="form-control" placeholder="Epost:">
+                      </form>
+                      <button type="submit" class="col-3 btn-btn-primary" style="width:fit-content"><b>Registrer</b></button>
+                    </div>
+                </div>
+            <div class="col-12 row" style="justify-content:space-between">
+              <!--Første-->
+              <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+                <ul class="footer_ul">
+                  <h4 class="h4 text-uppercase mb-4 font-weight-bold text-white">Personvern</h4>
+                  <li><a href="https://analytics.google.com/analytics/web/provision/#/provision" class="text-white" style="text-decoration: none;">Google analytics</a></li>
+                  <li><a href="https://www.datatilsynet.no/personvern-pa-ulike-omrader/internett-og-apper/cookies/" class="text-white" style="text-decoration: none;">Cookies-info</a></li>
+                  <li><a href="https://jusinfo.no/kjopsrett/om-kjopsrett/om-kjopsrett/" class="text-white" style="text-decoration: none;">Kjøpsrett</a></li>
+                  <li><a href="personvern.html" class="text-white" style="text-decoration: none;">Personvernerklæring</a></li>
+                </ul>
+              </div>
+            
+              <!--Andre-->
+              <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+                <ul class="footer_ul">
+                  <h4 class="h4 text-uppercase mb-4 font-weight-bold text-white">Kundestøtte</h4>
+                  <li><a href="#" class="text-white" style="text-decoration: none;">Kontakt oss</a></li>
+                  <li><a href="#" class="text-white" style="text-decoration: none;">Spørsmål og svar</a></li>
+                  <li><a href="#" class="text-white" style="text-decoration: none;">Reklamasjon og garanti</a></li>
+                </ul>
+              </div>
+    
+              <!--Tredje-->
+              <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
+                <ul class="footer_ul">
+                  <h4 class="h4 text-uppercase mb-4 font-weight-bold text-white">Produkter</h4>
+                  <li><a href="/forside.html" class="text-white" style="text-decoration: none;">Nye produkter</a></li>
+                  <li><a href="/produktkatalog.html" class="text-white" style="text-decoration: none;">Nytt på lager</a></li>
+                  <li><a href="/produktkatalog.html" class="text-white" style="text-decoration: none;">Merker/ produsent</a></li>
+                </ul>
+              </div>
+              
+              <!--<hr class="mb-4">-->
+                <div style="display: flex; justify-content: center; width: 100%;">
+                  <p>Copyright ©2023 All rights reserved by:
+                    <a href="https://domains.google" style="text-decoration: none;">
+                      <b>The Providers</b>
+                    </a>
+                  </p>
+                </div>
+      
+                <div class="text-md-right">
+                  <div class="text-center text-md-end">
+                    <ul class="list-unstyled list-inline">
+                      <li class="list-inline-item">
+                        <img src="Bilder/Insta.png" alt="Instagram ikon" class="btn-floating btn-sm text-white"
+                          style="width:25px;">
+                      </li>
+      
+                      <li class="list-inline-item">
+                        <img src="Bilder/Facebook.png" alt="Facebook ikon" class="btn-floating btn-sm text-white"
+                          style="width:25px;">
+                      </li>
+      
+                      <li class="list-inline-item">
+                        <img src="Bilder/tiktok.png" alt="Tiktok ikon" class="btn-floating btn-sm text-white" style="width:25px;">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+    
+    <script>
+      const dropdowncontent = document.querySelector('.dropdown-content-hamburger');
+    const hamburgerimg = document.querySelector('#hamburger-img');
+    const crossimg = document.querySelector('#cross-img');
+
+    hamburgerimg.addEventListener('click', function() {
+      dropdowncontent.style.display = 'block';
+      hamburgerimg.style.display = 'none';
+    });
+
+    crossimg.addEventListener('click', function() {
+      dropdowncontent.style.display = 'none';
+      hamburgerimg.style.display = 'block';
+    });
+    </script>
+
+  </body>
+</html>
